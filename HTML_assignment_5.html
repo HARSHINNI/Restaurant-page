@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Restaurant Website</title>
+        
+   <style>
+       body {
+    font-family: "Verdana",sans-serif;
+    font-size: 15px;
+    margin:0px;
+  }
+.box{
+    position:sticky;
+    width:100%;
+    background-color: black;
+  }
+  .box ul li{
+      width:100px;
+      float:left;
+      margin:10px auto;
+      text-align:center;
+       padding:10px 30px;
+  }
+  .box ul li a{
+      text-decoration: none;
+      color:white;
+  }
+  .box ul li:hover{
+      background-color: whitesmoke;
+  }
+  .box ul li a:hover{
+    color:black;
+}
+ .top{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4),rgba(0,0,0,0.2),rgba(0,0,0,0.1)), url(https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    height: 750px;
+    position:relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100%;
+}
+h1.title{
+    padding:10px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 40px;
+    color:rgb(255, 245, 224);
+    position:absolute;
+    top:20%;
+    width:30%;
+    margin-left: 37%;
+}
+p.subtitle{
+    padding:10px;
+    text-align: center;
+    letter-spacing: 2px;
+    position:absolute;
+    font-size: 25px;
+    color:rgb(255, 240, 211);
+    text-transform: capitalize;
+    top:35%;
+    width:37%;
+    margin-left: 33%;
+  }
+  .button1,.button2{
+    background-color: black;
+    color:rgb(255, 240, 211);
+    position:absolute;
+    font-size: 20px;
+    border:whitesmoke 1px solid;
+    padding:10px 20px;
+    border-radius:10px;
+    text-decoration:none ;
+    width:5%;
+    text-align: center;
+    margin-left:5%;
+}
+  .button1:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(46,46,46);
+   }
+   .button2:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(46,46,46);
+}
+   .button2{
+    top:65%;
+}
+  .button1{
+    top:52%;
+}
+  #sec1,#sec3,#sec4,#sec5{
+    background-color: rgb(255, 248, 234);
+    color:rgba(109, 6, 6, 0.897);
+    font-size: 20px;
+    height:4.5cm;
+    text-align: center;
+    line-height: 35px;
+    padding:35px;
+}
+  #sec3{
+      height:5cm;
+      padding:30px 50px;
+      border-bottom: 3px solid black;
+}
+/* #sec4{
+    background: url('https://images.pexels.com/photos/357743/pexels-photo-357743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+} */
+footer{
+    background-color: black;
+    color: rgb(255, 248, 234);
+    padding: 5px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+#sec2{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(59, 58, 58);
+    padding:4em 2em 2em;
+}
+#sec2 img{
+    width: 100%;
+}
+#sec2 div{
+    background-color: rgb(255, 240, 211);
+    width: 20%;
+    text-align: center;
+    margin: 40px 0;
+}
+#sec2 h3{
+    margin: 30px 0;
+    font-size: 27px;
+}
+#sec2 div p{
+    font-size: 22px;
+    padding: 20px;
+    line-height: 40px;
+}
+#sec5{
+    background: url('https://images.pexels.com/photos/4604599/pexels-photo-4604599.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+  background-size:cover;
+  height: 70%;
+  color:white;
+}
+.subtitle{
+    font-weight: bolder;
+    font-family: cursive;
+}
+#sec3{
+    background: url('https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    color: whitesmoke;
+}
+   </style>
+    </head>
+
+    <body>
+        <section class="top">
+        <div class="box">
+            <ul type="none">
+                <li><a href="#sec1">HOME</a></li>
+                <li><a href="#sec2">MENU</a></li>
+                <li><a href="#sec3">ABOUT</a></li>
+                <li><a href="#sec4">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <header class="head">
+            <h1 class="title">CHOPS & HOPS</h1>
+            <p class="subtitle">We serve for the taste</p>
+            <a href="#sec2" class="button1">Dine In</a>
+            <a href="#sec2" class="button2">Delivery</a>
+        </header>
+        </section>
+
+        <section id="sec1">
+                <p>Craving is just the feeling<br>
+                Enjoy the craving to the best with us!!!<br>                
+                we dine with LOVE</p>
+        </section>
+
+        <section id="sec2">
+            <div class="box1">
+                <img src="https://images.pexels.com/photos/3669501/pexels-photo-3669501.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="starters" height="170px" width="120px">
+                <h3>Starters</h3>
+                <p>Start as you mean to go on with our favourite starter recipes for memorable & easy starters</p>
+            </div>
+            <div class="box2">
+                <img src="https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="main ocurse" height="170px" width="80px">
+                <h3>Main Course</h3>
+                <p>A main course is the featured or primary dish in a meal consisting of several courses.</p>
+            </div>
+            <div class="box1">
+                <img src="https://images.pexels.com/photos/8887011/pexels-photo-8887011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="desserts" height="170px" width="120px">
+                <h3>Desserts</h3>
+                <p>Satisfy your taste buds with more sugar</p>
+            </div>
+            <div class="box2">
+                <img src="https://images.pexels.com/photos/3645478/pexels-photo-3645478.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" height="170px" width="120px">
+                           
+                <h3>Soft Drinks</h3>
+            <p>Soft drinks play a positive role in a balanced diet.</p>
+            </div>
+        </section>
+
+        <section id="sec3">
+            <h2>About Us</h2>
+            <p>We serve with love to satisify your needs,We serve for all Occasions
+             <br>We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste </p>
+        </section>
+
+        <section id="sec4">
+            
+            <h2>Contact Us</h2>
+            <p>AMC Enclave, No 6, III Cross Street, Sterling Road 600034 Chennai India</p>
+                         
+        </section>
+        <section id="sec5">
+            <style>
+               
+            </style>
+            <h2>Delivery</h2>
+            <p>WE Do Door step Delivery for all your orders.</p>
+
+        </section>
+
+        <footer >
+           <h4>For More Queries: consumercare@chops&hops.com</h4>
+        </footer>
+    </body>
+</html>
+     
+    
